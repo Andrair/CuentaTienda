@@ -1,14 +1,17 @@
 import React from "react";
 import styled from "styled-components";
-import Logo from "./logo.svg";
+import Logo from "../Imagenes/logo.svg";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   grid-column: 1 / 4;
+  grid-row: 1 / 13;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   background: #343a40;
+  box-shadow: 3px 0px 5px 1px rgba(0, 0, 0, 0.23);
 `;
 
 const ImgLogo = styled.img`
@@ -33,11 +36,12 @@ const Item = styled.div`
   }
 `;
 
-const TextItem = styled.p`
-  font-size: calc(1vw + 0.8em);
-  margin: 5px 0 5px 20px;
+const LinkItem = styled(Link)`
+  font-size: calc(1vw + 1em);
+  margin: 5px 0 5px 30px;
   font-weight: bold;
   color: #f8f9fa;
+  text-decoration: none;
 `;
 
 const Sidebar = () => {
@@ -46,19 +50,16 @@ const Sidebar = () => {
       <ImgLogo src={Logo} />
       <ContentBox>
         <Item>
-          <TextItem>Productos</TextItem>
+          <LinkItem to="/productos">Productos</LinkItem>
         </Item>
         <Item>
-          <TextItem>Inventario</TextItem>
+          <LinkItem>Inventario</LinkItem>
         </Item>
         <Item>
-          <TextItem>Ventas</TextItem>
+          <LinkItem>Ventas</LinkItem>
         </Item>
         <Item>
-          <TextItem>Estadisticas</TextItem>
-        </Item>
-        <Item>
-          <TextItem>Pedidos</TextItem>
+          <LinkItem>Estadisticas</LinkItem>
         </Item>
       </ContentBox>
     </Container>
