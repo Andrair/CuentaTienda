@@ -1,0 +1,64 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Arroz",
+      "precio": "1500"
+    },
+    {
+      "id": 2,
+      "nombre": "Frijol",
+      "precio": "2000"
+    },
+    {
+      "id": 3,
+      "nombre": "Lentejas",
+      "precio": "1000"
+    },
+    {
+      "nombre": "Garbanzos",
+      "precio": "2000",
+      "id": 4
+    },
+    {
+      "nombre": "Azucar",
+      "precio": "2500",
+      "id": 5
+    },
+    {
+      "nombre": "Sal",
+      "precio": "1000",
+      "id": 6
+    },
+    {
+      "nombre": "Galletas Saltin",
+      "precio": "1000",
+      "id": 7
+    },
+    {
+      "nombre": "Agua en Bolsa",
+      "precio": "2500",
+      "id": 8
+    },
+    {
+      "nombre": "Frutiño",
+      "precio": "500",
+      "id": 9
+    },
+    {
+      "id": 10,
+      "nombre": "Papas Margarita",
+      "precio": "1200"
+    },
+    {
+      "nombre": "ultima prueba",
+      "precio": "5",
+      "id": 15
+    },
+    {
+      "nombre": "correcion ultima prueba",
+      "precio": "6",
+      "id": 16
+    }
+  ]
+}

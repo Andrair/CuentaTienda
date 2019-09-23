@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Logo from "../Imagenes/logo.svg";
+import Logo from "../Imagenes/Logo.png";
 import { Link } from "react-router-dom";
 
 const Container = styled.div`
@@ -9,6 +9,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+
   align-items: center;
   background: #343a40;
   box-shadow: 3px 0px 5px 1px rgba(0, 0, 0, 0.23);

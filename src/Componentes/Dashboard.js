@@ -4,13 +4,10 @@ import Sidebar from "./Sidebar";
 import Upperbar from "./Upperbar";
 import Main from "./Main.js";
 import { Route, Switch } from "react-router-dom";
-import Productos from "./Productos";
-import Ventas from "./Ventas";
-import Inventario from "./Inventario";
-import Estadisticas from "./Estadisticas";
+
 import AgregarProducto from "./AgregarProducto";
+import Productos from "./Productos";
 import EditarProducto from "./EditarProducto";
-import Producto from "./Producto";
 
 const Container = styled.div`
   display: grid;
@@ -47,9 +44,8 @@ const Dashboard = props => {
       <Content>
         <Switch>
           <Route exact path="/" component={Main} />
-          <Route exact path="/nuevo-producto" component={AgregarProducto} />
+          <Route exact path="/productos/nuevo" component={AgregarProducto} />
           <Route exact path="/productos" component={Productos} />
-          <Route exact path="/producto/:id" component={Producto} />
           <Route
             exact
             path="/productos/editar/:id"
